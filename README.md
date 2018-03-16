@@ -1,2 +1,3 @@
 # pd-ssp
-pure data simple serial protocol external
+arduino to pd simple serial protocol (pd side)
+external
