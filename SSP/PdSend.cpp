@@ -1,6 +1,5 @@
 #include "PdSend.h"
 
-
 PdSend::PdSend()
 {
   char *addrmsg = "test";
@@ -17,7 +16,6 @@ PdSend::PdSend(char *addrmsg, int p)
   stopbyte    = "}";
   prec        = p;
 }
-
 
 void PdSend::sendmsg(char *types, ...)
 {
