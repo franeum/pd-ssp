@@ -1,4 +1,3 @@
-
 #include "PdSend.h"
 
 
@@ -48,14 +47,13 @@ void PdSend::sendmsg(char *types, ...)
        strcat(totmsg, buf);
        *buf = '\0';
     }
+
     ++types;
   }
+
   strcat(totmsg, stopbyte);
-
   Serial.write(totmsg);
-
   va_end(args);
-
   *totmsg = '\0';
 }
 
